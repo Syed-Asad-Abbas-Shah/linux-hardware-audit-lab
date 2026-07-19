@@ -1,0 +1,36 @@
+$ vmstat -s
+---
+      7901172 K total memory
+      2124792 K used memory
+      2492080 K active memory
+      1225156 K inactive memory
+      3139196 K free memory
+        13940 K buffer memory
+      3290852 K swap cache
+      7900156 K total swap
+            0 K used swap
+      7900156 K free swap
+        32255 non-nice user cpu ticks
+          349 nice user cpu ticks
+        11543 system cpu ticks
+       882619 idle cpu ticks
+         1096 IO-wait cpu ticks
+         7528 IRQ cpu ticks
+          557 softirq cpu ticks
+            0 stolen cpu ticks
+            0 non-nice guest cpu ticks
+            0 nice guest cpu ticks
+      1639416 K paged in
+       491743 K paged out
+            0 pages swapped in
+            0 pages swapped out
+          256 pages alloc in dma
+          257 pages alloc in dma32
+            0 pages alloc in high
+            0 pages alloc in movable
+      6088064 pages alloc in normal
+      6926798 pages free
+      4076356 interrupts
+      3133448 CPU context switches
+   1784439784 boot time
+         7112 forks

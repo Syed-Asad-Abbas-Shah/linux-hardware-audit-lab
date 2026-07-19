@@ -1,0 +1,3 @@
+$ bash -c command -v nvme >/dev/null && nvme list || echo "nvme-cli not installed; /dev/nvme0 present"
+---
+nvme-cli not installed; /dev/nvme0 present

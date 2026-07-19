@@ -1,0 +1,33 @@
+$ df -hT
+---
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /
+devtmpfs       devtmpfs  3.7G     0  3.7G   0% /dev
+tmpfs          tmpfs     3.8G     0  3.8G   0% /dev/shm
+efivarfs       efivarfs  150K   85K   61K  59% /sys/firmware/efi/efivars
+tmpfs          tmpfs     1.6G  2.1M  1.6G   1% /run
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /root
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /home
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /srv
+tmpfs          tmpfs     3.8G   14M  3.8G   1% /tmp
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /var/cache
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /var/log
+/dev/nvme0n1p2 btrfs     235G  101G  131G  44% /var/tmp
+/dev/nvme0n1p1 vfat      4.0G  204M  3.8G   5% /boot
+/dev/loop10    squashfs  128K  128K     0 100% /var/lib/snapd/snap/bare/5
+/dev/loop6     squashfs   74M   74M     0 100% /var/lib/snapd/snap/core22/2411
+/dev/loop7     squashfs   92M   92M     0 100% /var/lib/snapd/snap/gtk-common-themes/1535
+/dev/loop3     squashfs   56M   56M     0 100% /var/lib/snapd/snap/core18/2999
+/dev/loop4     squashfs  402M  402M     0 100% /var/lib/snapd/snap/mesa-2404/1781
+/dev/loop12    squashfs   51M   51M     0 100% /var/lib/snapd/snap/snapd/27406
+/dev/loop11    squashfs  185M  185M     0 100% /var/lib/snapd/snap/element-desktop/203
+/dev/loop9     squashfs  165M  165M     0 100% /var/lib/snapd/snap/gnome-3-28-1804/198
+/dev/loop8     squashfs  1.5G  1.5G     0 100% /var/lib/snapd/snap/kf5-core22/3
+/dev/loop1     squashfs  607M  607M     0 100% /var/lib/snapd/snap/gnome-46-2404/153
+/dev/loop2     squashfs  395M  395M     0 100% /var/lib/snapd/snap/mesa-2404/1165
+/dev/loop0     squashfs   50M   50M     0 100% /var/lib/snapd/snap/snapd/26865
+/dev/loop5     squashfs   67M   67M     0 100% /var/lib/snapd/snap/core24/1643
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs          tmpfs     772M   72K  772M   1% /run/user/1000

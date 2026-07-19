@@ -1,0 +1,4 @@
+$ kscreen-doctor -l
+---
+kscreen-doctor: Missing value after '-l'.
+[exit code: 1]

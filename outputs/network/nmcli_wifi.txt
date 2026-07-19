@@ -1,0 +1,5 @@
+$ nmcli -t -f DEVICE,TYPE,STATE,CONNECTION device
+---
+wlan0:wifi:connected:Syed Asad Kazmi
+lo:loopback:connected (externally):lo
+p2p-dev-wlan0:wifi-p2p:disconnected:

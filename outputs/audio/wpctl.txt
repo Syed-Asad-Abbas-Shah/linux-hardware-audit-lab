@@ -1,0 +1,58 @@
+$ wpctl status
+---
+PipeWire 'pipewire-0' [1.6.8, user@hostname, cookie:4038946762]
+ └─ Clients:
+        32. kwin_wayland                        [1.6.8, user@hostname, pid:1131]
+        33. WirePlumber                         [1.6.8, user@hostname, pid:1167]
+        42. WirePlumber [export]                [1.6.8, user@hostname, pid:1167]
+        82. pipewire                            [1.6.8, user@hostname, pid:1383]
+        83. libcanberra                         [1.6.8, user@hostname, pid:1238]
+        84.                                     [1.6.8, user@hostname, pid:1238]
+        89. xdg-desktop-portal                  [1.6.8, user@hostname, pid:1501]
+        90. plasmashell                         [1.6.8, user@hostname, pid:1253]
+        91. libcanberra                         [1.6.8, user@hostname, pid:1253]
+        92.                                     [1.6.8, user@hostname, pid:1253]
+        93.                                     [1.6.8, user@hostname, pid:1284]
+        94. wpctl                               [1.6.8, user@hostname, pid:7198]
+
+Audio
+ ├─ Devices:
+ │      43. 400 Series Chipset Family On-Package HD Audio [alsa]
+ │  
+ ├─ Sinks:
+ │      50. 400 Series Chipset Family On-Package HD Audio HDMI / DisplayPort 3 Output [vol: 1.00]
+ │      51. 400 Series Chipset Family On-Package HD Audio HDMI / DisplayPort 2 Output [vol: 1.00]
+ │      52. 400 Series Chipset Family On-Package HD Audio HDMI / DisplayPort 1 Output [vol: 1.00]
+ │  *   53. 400 Series Chipset Family On-Package HD Audio Speaker [vol: 0.95]
+ │  
+ ├─ Sources:
+ │      54. 400 Series Chipset Family On-Package HD Audio Stereo Microphone [vol: 1.00]
+ │  *   55. 400 Series Chipset Family On-Package HD Audio Digital Microphone [vol: 1.50]
+ │  
+ ├─ Filters:
+ │  
+ └─ Streams:
+
+Video
+ ├─ Devices:
+ │      56. HP HD Camera                        [v4l2]
+ │      57. HP HD Camera                        [v4l2]
+ │      58. HP HD Camera                        [v4l2]
+ │      59. HP HD Camera                        [v4l2]
+ │  
+ ├─ Sinks:
+ │  
+ ├─ Sources:
+ │  *   85. HP HD Camera (V4L2)                
+ │      87. HP HD Camera (V4L2)                
+ │  
+ ├─ Filters:
+ │  
+ └─ Streams:
+        98. kwin_wayland                                                
+             95. output_1        > plasmashell:input_1	[active]
+        99. plasmashell                                                 
+             97. input_1         < kwin_wayland:output_1	[active]
+
+Settings
+ └─ Default Configured Devices:

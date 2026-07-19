@@ -1,0 +1,6 @@
+$ lspci -k | grep -A 3 -i network
+---
+00:14.3 Network controller: Intel Corporation 400 Series Chipset Family On-Package CNVi WiFi
+	Subsystem: Intel Corporation Dual Band Wi-Fi 6(802.11ax) AX201 160MHz 2x2 [Harrison Peak]
+	Kernel driver in use: iwlwifi
+	Kernel modules: iwlwifi

@@ -1,0 +1,14 @@
+# Local re-captures (keep committed reference samples)
+# Uncomment if you want to ignore fresh local runs:
+# outputs.local/
+
+# Editor / OS noise
+*~
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Generated HTML inventories
+**/lshw.html
+**/hardware_report.html

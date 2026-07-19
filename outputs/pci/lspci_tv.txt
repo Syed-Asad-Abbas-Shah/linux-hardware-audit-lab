@@ -1,0 +1,22 @@
+$ lspci -tv
+---
+-[0000:00]-+-00.0  Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller
+           +-02.0  Intel Corporation CometLake-U GT2 [UHD Graphics]
+           +-04.0  Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem
+           +-12.0  Intel Corporation 400 Series Chipset Family On-Package Thermal Subsystem
+           +-14.0  Intel Corporation 400 Series Chipset Family On-Package USB 3.2 Gen 2x1 (10 Gbs) xHCI Host Controller
+           +-14.2  Intel Corporation 400 Series Chipset Family On-Package Shared SRAM
+           +-14.3  Intel Corporation 400 Series Chipset Family On-Package CNVi WiFi
+           +-15.0  Intel Corporation 400 Series Chipset Family On-Package I2C #0
+           +-15.1  Intel Corporation 400 Series Chipset Family On-Package I2C #1
+           +-16.0  Intel Corporation 400 Series Chipset Family On-Package MEI #1
+           +-16.3  Intel Corporation 400 Series Chipset Family On-Package Keyboard and Text (KT) Redirection
+           +-1c.0-[01-6a]----00.0-[02-6a]--+-00.0-[03]----00.0  Intel Corporation JHL7540 Thunderbolt 3 NHI [Titan Ridge 4C 2018]
+           |                               +-01.0-[04-36]--
+           |                               +-02.0-[37]----00.0  Intel Corporation JHL7540 Thunderbolt 3 USB Controller [Titan Ridge 4C 2018]
+           |                               \-04.0-[38-6a]--
+           +-1d.0-[6b]----00.0  Sandisk Corp SanDisk Ultra 3D / WD PC SN530, IX SN530, Blue SN550 NVMe SSD (DRAM-less)
+           +-1f.0  Intel Corporation 400 Series Chipset Family On-Package PCH-LP Prem-U LPC/eSPI Controller
+           +-1f.3  Intel Corporation 400 Series Chipset Family On-Package HD Audio
+           +-1f.4  Intel Corporation 400 Series Chipset Family On-Package SMBus
+           \-1f.5  Intel Corporation 400 Series Chipset Family On-Package SPI (flash) Controller

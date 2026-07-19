@@ -1,0 +1,13 @@
+$ bash -c ls -la /sys/firmware/efi 2>&1 | head -20
+---
+total 0
+drwxr-xr-x 5 root root    0 Jul 19 11:02 .
+drwxr-xr-x 6 root root    0 Jul 19 10:43 ..
+-r--r--r-- 1 root root 4096 Jul 19 11:02 config_table
+drwxr-xr-x 2 root root    0 Jul 19 10:43 efivars
+drwxr-xr-x 3 root root    0 Jul 19 11:02 esrt
+-r--r--r-- 1 root root 4096 Jul 19 11:02 fw_platform_size
+-r--r--r-- 1 root root 4096 Jul 19 11:02 fw_vendor
+-r--r--r-- 1 root root 4096 Jul 19 11:02 runtime
+drwxr-xr-x 7 root root    0 Jul 19 11:02 runtime-map
+-r-------- 1 root root 4096 Jul 19 11:02 systab

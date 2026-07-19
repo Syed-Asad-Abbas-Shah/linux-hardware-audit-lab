@@ -1,0 +1,27 @@
+$ lspci
+---
+00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
+00:12.0 Signal processing controller: Intel Corporation 400 Series Chipset Family On-Package Thermal Subsystem
+00:14.0 USB controller: Intel Corporation 400 Series Chipset Family On-Package USB 3.2 Gen 2x1 (10 Gbs) xHCI Host Controller
+00:14.2 RAM memory: Intel Corporation 400 Series Chipset Family On-Package Shared SRAM
+00:14.3 Network controller: Intel Corporation 400 Series Chipset Family On-Package CNVi WiFi
+00:15.0 Serial bus controller: Intel Corporation 400 Series Chipset Family On-Package I2C #0
+00:15.1 Serial bus controller: Intel Corporation 400 Series Chipset Family On-Package I2C #1
+00:16.0 Communication controller: Intel Corporation 400 Series Chipset Family On-Package MEI #1
+00:16.3 Serial controller: Intel Corporation 400 Series Chipset Family On-Package Keyboard and Text (KT) Redirection
+00:1c.0 PCI bridge: Intel Corporation 400 Series Chipset Family On-Package PCIe Root Port #5 (rev f0)
+00:1d.0 PCI bridge: Intel Corporation 400 Series Chipset Family On-Package PCIe Root Port #9 (rev f0)
+00:1f.0 ISA bridge: Intel Corporation 400 Series Chipset Family On-Package PCH-LP Prem-U LPC/eSPI Controller
+00:1f.3 Multimedia audio controller: Intel Corporation 400 Series Chipset Family On-Package HD Audio
+00:1f.4 SMBus: Intel Corporation 400 Series Chipset Family On-Package SMBus
+00:1f.5 Serial bus controller: Intel Corporation 400 Series Chipset Family On-Package SPI (flash) Controller
+01:00.0 PCI bridge: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 4C 2018] (rev 06)
+02:00.0 PCI bridge: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 4C 2018] (rev 06)
+02:01.0 PCI bridge: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 4C 2018] (rev 06)
+02:02.0 PCI bridge: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 4C 2018] (rev 06)
+02:04.0 PCI bridge: Intel Corporation JHL7540 Thunderbolt 3 Bridge [Titan Ridge 4C 2018] (rev 06)
+03:00.0 System peripheral: Intel Corporation JHL7540 Thunderbolt 3 NHI [Titan Ridge 4C 2018] (rev 06)
+37:00.0 USB controller: Intel Corporation JHL7540 Thunderbolt 3 USB Controller [Titan Ridge 4C 2018] (rev 06)
+6b:00.0 Non-Volatile memory controller: Sandisk Corp SanDisk Ultra 3D / WD PC SN530, IX SN530, Blue SN550 NVMe SSD (DRAM-less) (rev 01)

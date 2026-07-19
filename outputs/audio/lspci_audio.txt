@@ -1,0 +1,8 @@
+$ lspci -k | grep -A 3 -i audio
+---
+00:1f.3 Multimedia audio controller: Intel Corporation 400 Series Chipset Family On-Package HD Audio
+	Subsystem: Hewlett-Packard Company Device 8723
+	Kernel driver in use: sof-audio-pci-intel-cnl
+	Kernel modules: snd_soc_avs, snd_sof_pci_intel_cnl, snd_hda_intel
+00:1f.4 SMBus: Intel Corporation 400 Series Chipset Family On-Package SMBus
+	Subsystem: Hewlett-Packard Company Device 8723

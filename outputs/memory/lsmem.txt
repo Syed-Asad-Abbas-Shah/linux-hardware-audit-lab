@@ -1,0 +1,10 @@
+$ lsmem
+---
+RANGE                                 SIZE  STATE REMOVABLE BLOCK
+0x0000000000000000-0x0000000097ffffff 2.4G online       yes  0-18
+0x0000000100000000-0x000000025fffffff 5.5G online       yes 32-75
+
+Memory block size:                128M
+Total online memory:              7.9G
+Total offline memory:               0B
+Memmap on memory parameter:         no

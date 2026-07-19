@@ -1,0 +1,320 @@
+$ fwupdmgr get-devices
+---
+Idle…
+HP HP EliteBook 840 G7 Notebook PC
+│
+├─Unknown Device:
+│     Device ID:          aec1a869eb0df71b7cea6b3ac71d39b830faf164
+│     Vendor:             PNP:AUO
+│     GUID:               c0aa678d-6e02-5493-9f64-687004ef85b5 ← DRM\VEN_AUO&DEV_9B8B
+│   
+├─Core™ i7-10610U CPU @ 1.80GHz:
+│     Device ID:          4bde70ba4e39b28f9eab1628f9dd6e6244c03027
+│     Current version:    0x00000100
+│     Vendor:             Intel
+│     GUIDs:              561403e8-143a-5071-ab09-bf5e4c146983 ← CPUID\PRO_0&FAM_06&MOD_8E
+│                         d5092916-1868-5182-8c70-12f83dab6372 ← CPUID\PRO_0&FAM_06&MOD_8E&STP_C
+│     Device Flags:       • Internal device
+│   
+├─Internal SPI Controller:
+│ │   Device ID:          4c6f545e8b07914d7958312136bc2ae8396e8f19
+│ │   Summary:            Memory Technology Device
+│ │   Vendor:             Intel (PCI:0x8086)
+│ │   Problems:           • Device firmware has been locked
+│ │   GUIDs:              af783c5c-0390-55a5-ac35-7a6c43c6dbec ← MTD\NAME_BIOS
+│ │                       366250f6-d9aa-515c-a864-037e65335287 ← MTD\VEN_8086&DEV_02A4
+│ │                       cf9cf2a3-2c30-5b41-8fd9-cfa2ac4b748b ← MTD\VEN_8086&DEV_02A4&NAME_BIOS
+│ │   Device Flags:       • Internal device
+│ │                       • Needs a reboot after installation
+│ │                       • Cryptographic hash verification is available
+│ │                       • Can tag for emulation
+│ │ 
+│ └─Internal SPI Controller (BIOS):
+│       Device ID:        a5095bb82ec929a945202bc3823aadba71bbcd42
+│       Current version:  S70 Ver. 01.19.00
+│       Vendor:           Intel (PCI:0x8086)
+│       Problems:         • Device firmware has been locked
+│       GUID:             75af99a7-8ae0-5c84-8091-cfe7b595f03a ← IFD\REGION_bios
+│       Device Flags:     • Internal device
+│                         • Needs a reboot after installation
+│                         • Cryptographic hash verification is available
+│                         • Updatable
+│                         • Signed Payload
+│     
+├─ME:
+│     Device ID:          5fed1486be004d67ea79838d2e83aaa11bb72645
+│     Current version:    14.1.74.2355
+│     Vendor:             Intel
+│     Device Flags:       • Internal device
+│                         • Can tag for emulation
+│   
+├─PCH SPI Controller:
+│     Device ID:          b04e387fb80d2b91f37a4d0c7b21461c451775e1
+│     Summary:            Memory Technology Device
+│     Vendor:             Intel (PCI:0x8086)
+│     GUIDs:              5f93d7e7-e282-59b9-b663-0146e382f8f6 ← MTD\NAME_0000:00:1f.5
+│                         366250f6-d9aa-515c-a864-037e65335287 ← MTD\VEN_8086&DEV_02A4
+│                         02b4fdf0-cc28-55ef-92ab-156338db84e4 ← MTD\VEN_8086&DEV_02A4&NAME_0000:00:1f.5
+│     Device Flags:       • Internal device
+│                         • Updatable
+│                         • Needs a reboot after installation
+│                         • Cryptographic hash verification is available
+│                         • Can tag for emulation
+│   
+├─Prometheus:
+│ │   Device ID:          10c8d1aa67104f2092b6e297fc5d80ecb553116c
+│ │   Summary:            Fingerprint reader
+│ │   Current version:    10.01.3654703
+│ │   Vendor:             Synaptics (USB:0x06CB)
+│ │   URL:                https://www.synaptics.com/products/biometrics
+│ │   Install Duration:   2 seconds
+│ │   Serial bus controller: Intel Corporation 400 Series Chipset Family On-Package (details in full lspci)
+│ │   GUID:               8b06355d-849b-5125-85ec-6d02a20cf1ac ← USB\VID_06CB&PID_00DF
+│ │   Device Flags:       • Updatable
+│ │                       • Supported on remote server
+│ │                       • Cryptographic hash verification is available
+│ │                       • Signed Payload
+│ │                       • Can tag for emulation
+│ │ 
+│ └─Prometheus (IOTA Config):
+│       Device ID:        67ae2a7023c18ed2f4d046c316e60de50329900e
+│       Summary:          Fingerprint reader config
+│       Current version:  0027
+│       Minimum Version:  0027
+│       Vendor:           Synaptics (USB:0x06CB)
+│       GUID:             0e58a9cb-f338-567b-a7ca-2a821eb8f3c2 ← USB\VID_06CB&PID_00DF-cfg
+│       Device Flags:     • Updatable
+│                         • Only version upgrades are allowed
+│                         • Signed Payload
+│     
+├─System Firmware:
+│ │   Device ID:          12fb4d5e391be3ff28a277d24028fa85aa57ed35
+│ │   Summary:            UEFI System Resource Table device (updated via NVRAM)
+│ │   Current version:    0x01130000
+│ │   Minimum Version:    0x00000001
+│ │   Vendor:             HP (DMI:HP)
+│ │   URL:                http://www.hp.com
+│ │   Update State:       Success
+│ │   Problems:           • Device requires AC power to be connected
+│ │   GUID:               563e71f8-8344-418c-a722-9b55c56997e5
+│ │   Device Flags:       • Internal device
+│ │                       • System requires external power source
+│ │                       • Supported on remote server
+│ │                       • Needs a reboot after installation
+│ │                       • Cryptographic hash verification is available
+│ │                       • Device is usable for the duration of the update
+│ │                       • Updatable
+│ │   Device Requests:    • Message
+│ │ 
+│ ├─AMT (unprovisioned):
+│ │     Device ID:        8d5470e73fd9a31eaa460b2b6aea95483fe3f14c
+│ │     Summary:          Hardware and firmware technology for remote out-of-band management
+│ │     Current version:  14.1.74.2355
+│ │     Bootloader Version: 14.1.74.2355
+│ │     Vendor:           Intel (PCI:0x8086)
+│ │     Device Flags:     • Internal device
+│ │                       • Can tag for emulation
+│ │   
+│ ├─UEFI Key Exchange Key:
+│ │ │   Device ID:        2a4c23bfb79b5dabe474cb7b1b3e604645d6f9c6
+│ │ │   Device Flags:     • Internal device
+│ │ │ 
+│ │ ├─KEK CA:
+│ │ │     Device ID:      b7a1d3d90faa1f6275d9a98da4fb3be7118e61c7
+│ │ │     Current version: 2011
+│ │ │     Vendor:         Microsoft (UEFI:Microsoft)
+│ │ │     URL:            https://fwupd.github.io/libfwupdplugin/uefi-db.html
+│ │ │     GUIDs:          814e950f-1449-566a-a190-42c9d3a3a2df ← UEFI\VENDOR_Microsoft&NAME_Microsoft-KEK-CA
+│ │ │                     dfa66406-6568-5bdf-bb8e-b53ddb4be4cf ← UEFI\CRT_9F402B1CC0243CBEDC58A525789816CCCA7687A9
+│ │ │     Device Flags:   • Internal device
+│ │ │                     • Updatable
+│ │ │                     • Needs a reboot after installation
+│ │ │                     • Device is usable for the duration of the update
+│ │ │                     • Signed Payload
+│ │ │                     • Can tag for emulation
+│ │ │   
+│ │ └─UEFI Secure Boot KEK:
+│ │       Device ID:      757693607403758b44bc70d995f3f5aab5dfc9f2
+│ │       Current version: 2017
+│ │       Vendor:         HP (UEFI:HP)
+│ │       GUIDs:          e2a49393-a9af-5324-a6db-374924b9a0ce ← UEFI\VENDOR_HP&NAME_HP-UEFI-Secure-Boot-KEK
+│ │                       cc14b9a4-557c-59dd-b154-e040b1d67517 ← UEFI\CRT_3421767E92415862B897D24D9B408A81A8AF375F
+│ │       Device Flags:   • Internal device
+│ │                       • Updatable
+│ │                       • Needs a reboot after installation
+│ │                       • Device is usable for the duration of the update
+│ │                       • Signed Payload
+│ │                       • Can tag for emulation
+│ │     
+│ ├─UEFI Secure Boot PK:
+│ │     Device ID:        6924110cde4fa051bfdc600a60620dc7aa9d3c6a
+│ │     Summary:          UEFI Platform Key
+│ │     Current version:  2017
+│ │     Vendor:           HP
+│ │     GUIDs:            2d08e29a-018a-519e-89c7-b1aa39afe1d3 ← UEFI\VENDOR_HP&NAME_HP-UEFI-Secure-Boot-PK
+│ │                       3906d7cb-dd6d-5a75-ae08-5ec6fca77c46 ← UEFI\CRT_9BF772D66DF309A55F193437F0B99A6AB1BA6711
+│ │     Device Flags:     • Internal device
+│ │   
+│ ├─UEFI Signature Database:
+│ │ │   Device ID:        0352a8acc949c7df21fec16e566ba9a74e797a97
+│ │ │   Device Flags:     • Internal device
+│ │ │ 
+│ │ ├─UEFI CA:
+│ │ │     Device ID:      5bc922b7bd1adb5b6f99592611404036bd9f42d0
+│ │ │     Current version: 2011
+│ │ │     Vendor:         Microsoft (UEFI:Microsoft)
+│ │ │     URL:            https://fwupd.github.io/libfwupdplugin/uefi-db.html
+│ │ │     GUIDs:          26f42cba-9bf6-5365-802b-e250eb757e96 ← UEFI\VENDOR_Microsoft&NAME_Microsoft-UEFI-CA
+│ │ │                     c34a7e6a-bd86-5244-8bd0-7db66fd3c073 ← UEFI\CRT_E30CF09DABEAB32A6E3B07A7135245DE05FFB658
+│ │ │                     59eec2cb-02ff-5862-a067-842262c9dacd ← UEFI\CRT_E30CF09DABEAB32A6E3B07A7135245DE05FFB658&CRTD_7546E689348528AD9AF33F63A548E18182F85604
+│ │ │                     ab574007-cfe4-5207-b296-078605db58b8 ← UEFI\CRT_E30CF09DABEAB32A6E3B07A7135245DE05FFB658&CRTD_1A8B6903D64CC9AD09D12FCB355663A458A09EF0
+│ │ │     Device Flags:   • Internal device
+│ │ │                     • Updatable
+│ │ │                     • Needs a reboot after installation
+│ │ │                     • Signed Payload
+│ │ │                     • Can tag for emulation
+│ │ │   
+│ │ ├─UEFI Secure Boot DB:
+│ │ │     Device ID:      3bd9aa0d7863ca71169ad65e8acecfa77374a8b2
+│ │ │     Current version: 2017
+│ │ │     Vendor:         HP (UEFI:HP)
+│ │ │     GUIDs:          d03ac239-1bd6-567b-af91-f77151d85641 ← UEFI\VENDOR_HP&NAME_HP-UEFI-Secure-Boot-DB
+│ │ │                     7bb74479-a067-5a34-91db-7a1c9894a6c1 ← UEFI\CRT_7546E689348528AD9AF33F63A548E18182F85604
+│ │ │                     e5081cd4-fee3-5121-9e6a-d7009881bc10 ← UEFI\CRT_7546E689348528AD9AF33F63A548E18182F85604&CRTD_1A8B6903D64CC9AD09D12FCB355663A458A09EF0
+│ │ │                     a1d83a8b-2e6c-5d5c-ba76-535b0472c076 ← UEFI\CRT_7546E689348528AD9AF33F63A548E18182F85604&CRTD_E30CF09DABEAB32A6E3B07A7135245DE05FFB658
+│ │ │     Device Flags:   • Internal device
+│ │ │                     • Updatable
+│ │ │                     • Needs a reboot after installation
+│ │ │                     • Signed Payload
+│ │ │                     • Can tag for emulation
+│ │ │   
+│ │ └─Windows Production PCA:
+│ │       Device ID:      ad7e00ec37f005ae10492bdb7f73aef0d2e20488
+│ │       Current version: 2011
+│ │       Vendor:         Microsoft (UEFI:Microsoft)
+│ │       Problems:       • Device is lower priority than an equivalent device
+│ │       GUIDs:          675d2184-6c9a-59f1-a6f1-3c229b5dbb79 ← UEFI\VENDOR_Microsoft&NAME_Microsoft-Windows-Production-PCA
+│ │                       0611d85d-99a4-5c50-8c17-fc5196226f85 ← UEFI\CRT_1A8B6903D64CC9AD09D12FCB355663A458A09EF0
+│ │                       237d6107-e371-5480-ac5d-3f1b9ce1b08a ← UEFI\CRT_1A8B6903D64CC9AD09D12FCB355663A458A09EF0&CRTD_7546E689348528AD9AF33F63A548E18182F85604
+│ │                       e6590a1a-59a7-5bed-a0c5-eedcfed4b757 ← UEFI\CRT_1A8B6903D64CC9AD09D12FCB355663A458A09EF0&CRTD_E30CF09DABEAB32A6E3B07A7135245DE05FFB658
+│ │       Device Flags:   • Internal device
+│ │                       • Needs a reboot after installation
+│ │                       • Updatable
+│ │                       • Signed Payload
+│ │                       • Can tag for emulation
+│ │     
+│ └─UEFI dbx:
+│       Device ID:        362301da643102b9f38477387e2193e57abaa590
+│       Summary:          UEFI revocation database
+│       Current version:  20250902
+│       Minimum Version:  20250902
+│       Vendor:           Microsoft (UEFI:Microsoft)
+│       URL:              https://uefi.org/revocationlistfile
+│       Install Duration: 1 second
+│       GUIDs:            7689caf4-c147-5c67-bff9-5dbe59a441bd ← UEFI\CRT_C8B4C6D9755968B6DEB48D4768DD5E9020D3FF4ADC9A62521F54252DD4241678&ARCH_X64
+│                         f8ba2887-9411-5c36-9cee-88995bb39731 ← UEFI\CRT_A1117F516A32CEFCBA3F2D1ACE10A87972FD6BBE8FE0D0B996E09E65D802A503&ARCH_X64
+│       Device Flags:     • Internal device
+│                         • Updatable
+│                         • Supported on remote server
+│                         • Needs a reboot after installation
+│                         • Device is usable for the duration of the update
+│                         • Only version upgrades are allowed
+│                         • Signed Payload
+│                         • Can tag for emulation
+│     
+├─TPM:
+│     Device ID:          1d8d50a4dbc65618f5c399c2ae827b632b3ccc11
+│     Current version:    7.85.17.51968
+│     Vendor:             Infineon (TPM:IFX)
+│     GUIDs:              5eebb112-75ad-5536-b173-a11eb3399402 ← TPM\VEN_IFX&DEV_0000
+│                         ddf995da-1b32-5a8a-bc1b-8d5af4b38b51 ← TPM\VEN_IFX&MOD_SLB9670
+│                         6d81ab63-db2e-50ac-934f-6be9accf5e02 ← TPM\VEN_IFX&DEV_0000&VER_2.0
+│                         301555de-680d-5ddc-b995-7553fc9138f1 ← TPM\VEN_IFX&MOD_SLB9670&VER_2.0
+│     Device Flags:       • Internal device
+│                         • System requires external power source
+│                         • Needs a reboot after installation
+│                         • Device can recover flash failures
+│                         • Signed Payload
+│                         • Can tag for emulation
+│   
+├─Thunderbolt host controller:
+│     Device ID:          a00948d51d1c3922ce88fb2d7366722732899938
+│     Summary:            Unmatched performance for high-speed I/O
+│     Current version:    62.00
+│     Vendor:             HP Inc. (THUNDERBOLT:0x00F0, TBT:0x00F0)
+│     Problems:           • Device requires AC power to be connected
+│     GUIDs:              63e5aa97-3703-58d3-a55d-b8a61262a839 ← THUNDERBOLT\VEN_00F0&DEV_8723
+│                         87d91686-0d4c-5d31-ba86-e61362c62b46 ← TBT-00f08723-native
+│                         fa0edcd8-625b-5f1f-b28d-d1950162d14d ← TBT-00f08723-native-controller0-0
+│     Device Flags:       • Internal device
+│                         • System requires external power source
+│                         • Device stages updates
+│                         • Updatable
+│                         • Signed Payload
+│                         • Can tag for emulation
+│   
+├─UEFI Device Firmware:
+│     Device ID:          904f9e062b08a03a7337f7f6cbff53b799344c3e
+│     Summary:            UEFI System Resource Table device (updated via NVRAM)
+│     Current version:    370475008
+│     Minimum Version:    1
+│     Vendor:             DMI:HP
+│     Update State:       Success
+│     Problems:           • Device requires AC power to be connected
+│     GUID:               b58cfc31-3a86-6286-a620-f2a1c6c03ac2
+│     Device Flags:       • Internal device
+│                         • System requires external power source
+│                         • Needs a reboot after installation
+│                         • Device is usable for the duration of the update
+│                         • Updatable
+│     Device Requests:    • Message
+│   
+├─UEFI Device Firmware:
+│     Device ID:          511609a6165ea3f54501ee15aa5ca3302221a83a
+│     Summary:            UEFI System Resource Table device (updated via NVRAM)
+│     Current version:    1040253441
+│     Minimum Version:    1
+│     Vendor:             DMI:HP
+│     Update State:       Success
+│     Problems:           • Device requires AC power to be connected
+│     GUID:               891411c7-24f5-4067-9610-cdc90393825b
+│     Device Flags:       • Internal device
+│                         • System requires external power source
+│                         • Needs a reboot after installation
+│                         • Device is usable for the duration of the update
+│                         • Updatable
+│     Device Requests:    • Message
+│   
+├─UEFI Device Firmware:
+│     Device ID:          d9e178e953435561155398d560a3e814d4f298d0
+│     Summary:            UEFI System Resource Table device (updated via NVRAM)
+│     Current version:    335609856
+│     Minimum Version:    1
+│     Vendor:             DMI:HP
+│     Update State:       Success
+│     Problems:           • Device requires AC power to be connected
+│     GUID:               a0c65e09-4170-48e6-a0e5-b4900666d4b8
+│     Device Flags:       • Internal device
+│                         • System requires external power source
+│                         • Needs a reboot after installation
+│                         • Device is usable for the duration of the update
+│                         • Updatable
+│     Device Requests:    • Message
+│   
+└─WDC PC SN530 SDBPNPZ-256G-1006:
+      Device ID:          b40b91e51bce0283427fda5fb69caebe7d623bbd
+      Summary:            NVM Express solid state drive
+      Current version:    HPS2    
+      Vendor:             Sandisk (PCI:0x15B7)
+      Serial bus controller: Intel Corporation 400 Series Chipset Family On-Package (details in full lspci)
+      Problems:           • Device requires AC power to be connected
+      GUIDs:              dd75b173-c635-57e1-9569-c9da6dca84bb ← NVME\VEN_15B7&DEV_5009
+                          83579426-bdbb-5944-9af0-393070f66a99 ← NVME\VEN_15B7&DEV_5009&SUBSYS_15B75009
+                          4b4d8fa2-61cb-572d-9bf2-a092c8e84c2f ← WDC PC SN530 SDBPNPZ-256G-1006
+      Device Flags:       • Internal device
+                          • System requires external power source
+                          • Needs a reboot after installation
+                          • Device is usable for the duration of the update
+                          • Updatable
+                          • Can tag for emulation
+    

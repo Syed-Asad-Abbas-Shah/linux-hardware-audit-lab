@@ -1,0 +1,17 @@
+$ cpupower frequency-info
+---
+analyzing CPU 0:
+  driver: intel_pstate
+  CPUs which run at the same hardware frequency: 0
+  CPUs which need to have their frequency coordinated by software: 0
+  energy performance preference: balance_power
+  hardware limits: 400 MHz - 4.90 GHz
+  available cpufreq governors: performance powersave
+  current policy: frequency should be within 400 MHz and 4.90 GHz.
+                  The governor "powersave" may decide which speed to use
+                  within this range.
+  current CPU frequency: Unable to call hardware
+  current CPU frequency: 2.30 GHz (asserted by call to kernel)
+  boost state support:
+    Supported: yes
+    Active: yes

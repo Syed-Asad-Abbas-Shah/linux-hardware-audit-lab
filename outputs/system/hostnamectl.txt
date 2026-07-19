@@ -1,0 +1,17 @@
+$ hostnamectl
+---
+ Static hostname: <REDACTED_HOSTNAME>
+       Icon name: computer-laptop
+         Chassis: laptop 💻
+      Machine ID: <REDACTED_MACHINE_ID>
+         Boot ID: <REDACTED_BOOT_ID>
+Operating System: CachyOS
+          Kernel: Linux 7.1.3-2-cachyos
+    Architecture: x86-64
+ Hardware Vendor: HP
+  Hardware Model: HP EliteBook 840 G7 Notebook PC
+    Hardware SKU: 219S4UP#ABA
+Hardware Version: SBKPF
+Firmware Version: S70 Ver. 01.19.00
+   Firmware Date: Sun 2024-11-24
+    Firmware Age: 1y 7month 3w 2d

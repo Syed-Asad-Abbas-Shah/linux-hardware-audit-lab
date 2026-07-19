@@ -1,0 +1,11 @@
+$ lspci -k | grep -A 3 -E "(VGA|3D)"
+---
+00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
+	DeviceName: Onboard IGD
+	Subsystem: Hewlett-Packard Company Device 8723
+	Kernel driver in use: i915
+--
+6b:00.0 Non-Volatile memory controller: Sandisk Corp SanDisk Ultra 3D / WD PC SN530, IX SN530, Blue SN550 NVMe SSD (DRAM-less) (rev 01)
+	Subsystem: Sandisk Corp WD Blue SN550 NVMe SSD
+	Kernel driver in use: nvme
+	Kernel modules: nvme

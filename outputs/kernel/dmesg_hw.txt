@@ -1,0 +1,3 @@
+$ bash -c dmesg 2>&1 | grep -i -E "(error|fail|warn|firmware)" | head -80 || journalctl -k -b --no-pager 2>&1 | grep -i -E "(error|fail|warn|firmware)" | head -80
+---
+dmesg: read kernel buffer failed: Operation not permitted

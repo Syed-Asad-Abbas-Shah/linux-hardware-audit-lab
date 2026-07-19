@@ -1,0 +1,50 @@
+$ findmnt
+---
+TARGET                                        SOURCE                  FSTYPE      OPTIONS
+/                                             /dev/nvme0n1p2[/@]      btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=614,subvol=/@
+├─/dev                                        devtmpfs                devtmpfs    rw,nosuid,size=3849884k,nr_inodes=962471,mode=755,inode64,huge=advise
+│ ├─/dev/mqueue                               mqueue                  mqueue      rw,nosuid,nodev,noexec,relatime
+│ ├─/dev/hugepages                            hugetlbfs               hugetlbfs   rw,nosuid,nodev,relatime,pagesize=2M
+│ ├─/dev/shm                                  tmpfs                   tmpfs       rw,nosuid,nodev,inode64,huge=advise,usrquota
+│ └─/dev/pts                                  devpts                  devpts      rw,nosuid,noexec,relatime,gid=5,mode=600,ptmxmode=000
+├─/sys                                        sysfs                   sysfs       rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/tracing                       tracefs                 tracefs     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/fuse/connections                  fusectl                 fusectl     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/debug                         debugfs                 debugfs     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/config                        configfs                configfs    rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/security                      securityfs              securityfs  rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/cgroup                            cgroup2                 cgroup2     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/pstore                            none                    pstore      rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/firmware/efi/efivars                 efivarfs                efivarfs    rw,nosuid,nodev,noexec,relatime
+│ └─/sys/fs/bpf                               bpf                     bpf         rw,nosuid,nodev,noexec,relatime,mode=700
+├─/proc                                       proc                    proc        rw,nosuid,nodev,noexec,relatime
+│ └─/proc/sys/fs/binfmt_misc                  systemd-1               autofs      rw,relatime,fd=44,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=6585
+│   └─/proc/sys/fs/binfmt_misc                binfmt_misc             binfmt_misc rw,nosuid,nodev,noexec,relatime
+├─/run                                        tmpfs                   tmpfs       rw,nosuid,nodev,size=1580236k,nr_inodes=819200,mode=755,inode64,huge=advise
+│ ├─/run/credentials/systemd-journald.service none                    tmpfs       ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=advise,noswap
+│ ├─/run/credentials/systemd-resolved.service none                    tmpfs       ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=advise,noswap
+│ ├─/run/bpftune/cgroupv2                     none                    cgroup2     rw,relatime
+│ ├─/run/user/1000                            tmpfs                   tmpfs       rw,nosuid,nodev,relatime,size=790116k,nr_inodes=197529,mode=700,uid=1000,gid=1000,inode64,huge=advise
+│ │ └─/run/user/1000/doc                      portal                  fuse.portal rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
+│ └─/run/credentials/systemd-networkd.service none                    tmpfs       ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=advise,noswap
+├─/root                                       /dev/nvme0n1p2[/@root]  btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@root
+├─/srv                                        /dev/nvme0n1p2[/@srv]   btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@srv
+├─/home                                       /dev/nvme0n1p2[/@home]  btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home
+├─/tmp                                        tmpfs                   tmpfs       rw,noatime,inode64,huge=advise
+├─/var/cache                                  /dev/nvme0n1p2[/@cache] btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=260,subvol=/@cache
+├─/var/log                                    /dev/nvme0n1p2[/@log]   btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=262,subvol=/@log
+├─/var/tmp                                    /dev/nvme0n1p2[/@tmp]   btrfs       rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=261,subvol=/@tmp
+├─/boot                                       /dev/nvme0n1p1          vfat        rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+├─/var/lib/snapd/snap/bare/5                  /dev/loop10             squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/core22/2411             /dev/loop6              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/gtk-common-themes/1535  /dev/loop7              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/core18/2999             /dev/loop3              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/mesa-2404/1781          /dev/loop4              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/snapd/27406             /dev/loop12             squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/element-desktop/203     /dev/loop11             squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/gnome-3-28-1804/198     /dev/loop9              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/kf5-core22/3            /dev/loop8              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/gnome-46-2404/153       /dev/loop1              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/mesa-2404/1165          /dev/loop2              squashfs    ro,nodev,relatime,errors=continue,threads=single
+├─/var/lib/snapd/snap/snapd/26865             /dev/loop0              squashfs    ro,nodev,relatime,errors=continue,threads=single
+└─/var/lib/snapd/snap/core24/1643             /dev/loop5              squashfs    ro,nodev,relatime,errors=continue,threads=single

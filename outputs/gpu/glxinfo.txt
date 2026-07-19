@@ -1,0 +1,5 @@
+$ bash -c glxinfo | grep -E "(OpenGL vendor|OpenGL renderer|OpenGL version)"
+---
+OpenGL vendor string: Intel
+OpenGL renderer string: Mesa Intel(R) UHD Graphics (CML GT2)
+OpenGL version string: 4.6 (Compatibility Profile) Mesa 26.1.4-arch3.1

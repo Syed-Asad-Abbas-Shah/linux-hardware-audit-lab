@@ -1,0 +1,3 @@
+$ lsusb | grep -i audio
+---
+(no USB audio devices matched)

@@ -1,0 +1,3 @@
+$ bash -c command -v acpi >/dev/null && acpi -bi || echo "acpi not installed"
+---
+acpi not installed

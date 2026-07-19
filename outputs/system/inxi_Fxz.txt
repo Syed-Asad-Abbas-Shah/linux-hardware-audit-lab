@@ -1,0 +1,65 @@
+$ inxi -Fxz
+---
+System:
+  Kernel: 7.1.3-2-cachyos arch: x86_64 bits: 64 compiler: clang v: 22.1.6
+  Desktop: KDE Plasma v: 6.7.3 Distro: CachyOS base: Arch Linux
+Machine:
+  Type: Laptop System: HP product: HP EliteBook 840 G7 Notebook PC v: SBKPF
+    serial: <REDACTED_SERIAL>
+  Mobo: HP model: 8723 v: KBC Version 06.4C.00 serial: <REDACTED_SERIAL>
+    vendor: HP v: S70 Ver. 01.19.00 date: 11/24/2024
+Battery:
+  ID-1: BAT0 charge: 31.4 Wh (77%) condition: 40.7/53 Wh (76.8%) volts: 11.66 min: 11.55
+    model: Hewlett-Packard Primary status: discharging
+CPU:
+  Info: quad core model: Intel Core i7-10610U bits: 64 type: MT MCP arch: Comet/Whiskey Lake
+    note: check rev: C cache: L1: 256 KiB L2: 1024 KiB L3: 8 MiB
+  Speed (MHz): avg: 400 min/max: 400/4900 cores: 1: 400 2: 400 3: 400 4: 400 5: 400 6: 400 7: 400
+    8: 400 bogomips: 36799
+  Flags-basic: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+Graphics:
+  Device-1: Intel CometLake-U GT2 [UHD Graphics] vendor: Hewlett-Packard driver: i915 v: kernel
+    arch: Gen-9.5 bus-ID: 00:02.0
+  Device-2: Quanta HP HD Camera driver: uvcvideo type: USB bus-ID: 1-2:2
+  Display: wayland server: Xwayland v: 24.1.13 compositor: kwin_wayland driver: gpu: i915
+    resolution: 1920x1080~60Hz
+  API: EGL v: 1.5 drivers: iris,swrast platforms: active: gbm,wayland,x11,surfaceless,device
+    inactive: N/A
+  API: OpenGL v: 4.6 vendor: intel mesa v: 26.1.4-arch3.1 glx-v: 1.4 direct-render: yes
+    renderer: Mesa Intel UHD Graphics (CML GT2)
+  API: Vulkan v: 1.4.350 drivers: intel surfaces: N/A devices: 1
+  Info: Tools: api: clinfo, eglinfo, glxinfo, vulkaninfo de: kscreen-console,kscreen-doctor
+    wl: wayland-info x11: xdpyinfo, xprop, xrandr
+Audio:
+  Device-1: Intel 400 Series Family On-Package HD Audio vendor: Hewlett-Packard
+    driver: sof-audio-pci-intel-cnl bus-ID: 00:1f.3
+  API: ALSA v: k7.1.3-2-cachyos status: kernel-api
+  Server-1: sndiod v: N/A status: off
+  Server-2: JACK v: 0.126.0 status: off
+  Server-3: PipeWire v: 1.6.8 status: active
+Network:
+  Device-1: Intel 400 Series Family On-Package CNVi WiFi driver: iwlwifi v: kernel bus-ID: 00:14.3
+  IF: wlan0 state: up mac: <filter>
+Bluetooth:
+  Device-1: Intel AX201 Bluetooth driver: btusb v: 0.8 type: USB bus-ID: 1-10:4
+  Report: btmgmt ID: hci0 rfk-id: 0 state: up address: <filter> bt-v: 5.2 lmp-v: 11
+Drives:
+  Local Storage: total: 238.47 GiB used: 101.17 GiB (42.4%)
+  ID-1: /dev/nvme0n1 vendor: Western Digital model: PC SN530 SDBPNPZ-256G-1006 size: 238.47 GiB
+    temp: 39.9 C
+Partition:
+  ID-1: / size: 234.47 GiB used: 100.97 GiB (43.1%) fs: btrfs dev: /dev/nvme0n1p2
+  ID-2: /boot size: 3.99 GiB used: 203.6 MiB (5.0%) fs: vfat dev: /dev/nvme0n1p1
+  ID-3: /home size: 234.47 GiB used: 100.97 GiB (43.1%) fs: btrfs dev: /dev/nvme0n1p2
+  ID-4: /var/log size: 234.47 GiB used: 100.97 GiB (43.1%) fs: btrfs dev: /dev/nvme0n1p2
+  ID-5: /var/tmp size: 234.47 GiB used: 100.97 GiB (43.1%) fs: btrfs dev: /dev/nvme0n1p2
+Swap:
+  ID-1: swap-1 type: zram size: 7.53 GiB used: 0 KiB (0.0%) dev: /dev/zram0
+Sensors:
+  System Temperatures: cpu: 54.0 C pch: 52.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Info:
+  Memory: total: 8 GiB note: est. available: 7.54 GiB used: 1.92 GiB (25.5%)
+  Processes: 269 Uptime: 22m Init: systemd
+  Packages: 1925 Compilers: clang: 22.1.8 gcc: 16.1.1 Client: Unknown Client: grok-linux-x86_64
+    inxi: 3.3.41

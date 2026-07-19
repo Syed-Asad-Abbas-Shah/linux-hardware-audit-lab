@@ -1,0 +1,13 @@
+$ lsblk -e7 -o NAME,SIZE,FSTYPE,MOUNTPOINTS,MODEL,SERIAL
+<REDACTED_SERIAL>
+NAME          SIZE FSTYPE MOUNTPOINTS MODEL                          SERIAL
+<REDACTED_SERIAL>
+nvme0n1     238.5G                    WDC PC SN530 SDBPNPZ-256G-1006 20491D804917
+├─nvme0n1p1     4G vfat   /boot                                      
+└─nvme0n1p2 234.5G btrfs  /var/tmp                                   
+                          /var/log                                   
+                          /var/cache                                 
+                          /srv                                       
+                          /home                                      
+                          /root                                      
+                          /                                          
